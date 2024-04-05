@@ -40,7 +40,7 @@ async def get_users(
 
 @router.get("/birth_date", response_model=list[UserResponse])
 async def get_users_birth(
-    limit: int = Query(10, ge=10, le=100), db: AsyncSession = Depends(get_db)
+    limit: int = Query(7, ge=7, le=100), db: AsyncSession = Depends(get_db)
 ) -> list[UserResponse]:
     """
     Get a list of users whose birthdays fall within a specified limit.
