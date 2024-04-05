@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "project on fastapi"
 version = "0.1.0"
+package-mode = false
 description = "mini project FastAPI"
 authors = ["Vlad <vlad111121562@gmail.com>"]
 license = "MIT"
@@ -11,7 +12,8 @@ python = "^3.12"
 fastapi = "^0.110.0"
 uvicorn = {extras = ["standard"], version = "^0.29.0"}
 sqlalchemy = "^2.0.29"
-psycopg2 = "^2.9.9"
+asyncpg = "^0.29.0"
+pydantic = {extras = ["email"], version = "^2.6.4"}
 
 
 [build-system]
